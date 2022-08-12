@@ -1,13 +1,11 @@
 # Project 1 
-![](https://github.com/thatssweety/Images/blob/7655044de3a0b236f70f110aa67bfcc78337879f/you%20(2).png)
-###    
-###
-##
+![alt text](https://github.com/thatssweety/Images/blob/7655044de3a0b236f70f110aa67bfcc78337879f/you%20(2).png?raw=true)
 
-## 1000 images for each class (13 classes in total)
- ![](https://github.com/thatssweety/Images/blob/efcd70d1f839a3dea9b10169c92c5790988f0e67/Screenshot%20(434).png)
 
-## Tech Stack Used :
+# 1000 images for each class (13 classes in total)
+ ![alt text](https://github.com/thatssweety/Images/blob/efcd70d1f839a3dea9b10169c92c5790988f0e67/Screenshot%20(434).png?raw=true)
+
+# Tech Stack Used :
 1. Numpy
 2. Pandas
 3. Tensorflow
