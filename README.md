@@ -1,12 +1,21 @@
 # **Project 1** 
-# Classification of Hindi alphabets using Convolutional Neural Network.
+<br>
+<br>
+
+## Classification of Hindi alphabets using Convolutional Neural Network
 
 ![alt text](https://github.com/thatssweety/Images/blob/7655044de3a0b236f70f110aa67bfcc78337879f/you%20(2).png?raw=true)
 
 
 # 1000 images for each class (13 classes in total)
- ![alt text](https://github.com/thatssweety/Images/blob/efcd70d1f839a3dea9b10169c92c5790988f0e67/Screenshot%20(434).png?raw=true)
+<br>
+<br>
+<br>
+<br>
 
+![alt text](https://github.com/thatssweety/Images/blob/efcd70d1f839a3dea9b10169c92c5790988f0e67/Screenshot%20(434).png?raw=true)
+<br>
+<br>
 #  **Tech Stack Used** :
 
 1. Numpy
@@ -14,12 +23,18 @@
 3. Tensorflow
 4. OpenCV
 5. Keras
+<br>
+<br>
 
 # Code
  In Python
+<br>
+<br>
+<br>
+<br>
 # Loading Data and Image Pre-Processing
- 
- ```python
+
+```python
  
  
 import numpy as np
@@ -46,8 +61,9 @@ IMG_SIZE=50
 new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
 plt.show()
 
-
 ```
+<br>
+<br>
 # Creating Training Data using images
 
 ```python
@@ -74,7 +90,10 @@ create_training_data()
 
 ```
 ![alt text](https://github.com/thatssweety/Images/blob/8c915ddf5cbc49274668af7e61e671d160f5dd12/Screenshot%20(444)%20-%20Copy.png?raw=true)
-
+<br>
+<br>
+<br>
+<br>
 
 # Creating features and label and saving them
 
@@ -103,6 +122,8 @@ pickle_in = open("y.pickle","rb")
 y = pickle.load(pickle_in)
 
 ```
+<br>
+<br>
 # CNN MODEL
 ```python
 
@@ -139,7 +160,8 @@ model.compile(loss='sparse_categorical_crossentropy',
 model.fit(X, y, batch_size=32, epochs=3, validation_split=0.4)
 ```
 ![alt text](https://github.com/thatssweety/Images/blob/94a9b3977f7e98fc190522c6c0580d2f3439e152/Screenshot%20(440).png?raw=true)
-
+<br>
+<br>
 # Saving Model
 
 ```python
@@ -166,7 +188,10 @@ samples_to_predict = []
 samples_to_predict.append(new_array)
 ```
 ![alt text](https://github.com/thatssweety/Images/blob/94e646ab11d7acde88fb8bfae25272a4b3abbc33/Screenshot%20(441).png?raw=true)
-
+<br>
+<br>
+<br>
+<br>
 # Predictions
 
 ```python
@@ -176,5 +201,38 @@ classes = np.argmax(predictions, axis = 1)
 print(classes)
 
 ```
+<br>
+<br>
+
 ![alt text](https://github.com/thatssweety/Images/blob/47bd0051dcedeadd30d85d77fb970f569e293511/Screenshot%20(443).png?raw=true)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+![alt text](https://github.com/thatssweety/Images/blob/8c915ddf5cbc49274668af7e61e671d160f5dd12/Image%20Data%20fot%20training%20and%20validation%20(1).png?raw=true)
+
+<br>
+<br>
+<br>
+<br>
+# Prediction result true!<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    
+       
+         
+## [Complete Code Here](https://github.com/thatssweety/Handwriting-Recognition-and-Classification-Of-Hindi-Vowels/blob/main/Handwriting_Recognition_and_Classification_Of_Hindi_Vowels.ipynb)
+        
+             
+                  
+## [DataSet Here](https://github.com/thatssweety/Handwriting-Recognition-and-Classification-Of-Hindi-Vowels/blob/main/Dataset%20Vowels.zip)
+## [Github](https://github.com/thatssweety/)
+
 
