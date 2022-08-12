@@ -1,10 +1,22 @@
 # Project 1 
 ![](https://github.com/thatssweety/Images/blob/7655044de3a0b236f70f110aa67bfcc78337879f/you%20(2).png)
+###    
+###
+##
+
 ## 1000 images for each class (13 classes in total)
- ![](https://github.com/thatssweety/Images/blob/e632b15a8f7de6e566ce51530c42cc2c4c71772b/Image%20Data%20fot%20training%20and%20validation.png)
+ ![](https://github.com/thatssweety/Images/blob/efcd70d1f839a3dea9b10169c92c5790988f0e67/Screenshot%20(434).png)
+
+## Tech Stack Used :
+1. Numpy
+2. Pandas
+3. Tensorflow
+4. OpenCV
+5. Keras
+
  # Code
  
- ### Uploaing Data and importing libraries
+ # Loading data and Image Pre-Processing
   ```
 import numpy as np
 import matplotlib.pyplot as plt
@@ -26,16 +38,12 @@ for category in CATEGORIES:
 
         break  # we just want one for now so break
        
-```
-
-### Resizing images
-```
 IMG_SIZE=50
 new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
 plt.show()
 
 ```
-### Making Training Data
+### Creating Training Data using images
 
 ```
 training_data = []
