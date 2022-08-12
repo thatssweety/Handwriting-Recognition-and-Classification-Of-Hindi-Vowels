@@ -1,6 +1,7 @@
 # **Project 1** 
 ![alt text](https://github.com/thatssweety/Images/blob/7655044de3a0b236f70f110aa67bfcc78337879f/you%20(2).png?raw=true)
 
+# Classification of Hindi alphabets using Convolutional Neural Network.
 
 # 1000 images for each class (13 classes in total)
  ![alt text](https://github.com/thatssweety/Images/blob/efcd70d1f839a3dea9b10169c92c5790988f0e67/Screenshot%20(434).png?raw=true)
@@ -15,8 +16,7 @@
 
 # Code
  In Python
- 
- # Loading Data and Image Pre-Processing
+# Loading Data and Image Pre-Processing
  
  ```python
  
