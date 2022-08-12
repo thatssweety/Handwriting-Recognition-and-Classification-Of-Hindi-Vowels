@@ -182,7 +182,9 @@ new_array=np.array(new_array).reshape(-1, IMG_SIZE, IMG_SIZE, 1)
 samples_to_predict = []
 samples_to_predict.append(new_array)
 ```
+## (this is our test image!)
 ![alt text](https://github.com/thatssweety/Images/blob/94e646ab11d7acde88fb8bfae25272a4b3abbc33/Screenshot%20(441).png?raw=true)
+
 
 # Predictions
 ```python
@@ -200,7 +202,7 @@ print(classes)
 
 
 
-# Prediction result true!
+# Hence Prediction result true!
 <br>
 <br>
 <br>
