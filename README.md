@@ -18,7 +18,7 @@
  
  # Loading data and Image Pre-Processing
  
- ```
+ ```python
  
  
 import numpy as np
@@ -49,7 +49,7 @@ plt.show()
 ```
 # Creating Training Data using images
 
-```
+```python
 
 training_data = []
 
@@ -77,7 +77,8 @@ create_training_data()
 
 # Creating features and label and saving them
 
-```
+```python
+
 import random
 random.shuffle(training_data)
 X = []
@@ -102,7 +103,8 @@ y = pickle.load(pickle_in)
 
 ```
 # CNN MODEL
-```
+```python
+
 import tensorflow as tf
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -138,7 +140,8 @@ model.fit(X, y, batch_size=32, epochs=3, validation_split=0.4)
 ![alt text](https://github.com/thatssweety/Images/blob/94a9b3977f7e98fc190522c6c0580d2f3439e152/Screenshot%20(440).png?raw=true)
 
 # Saving Model
-```
+
+```python
 from tensorflow.keras.models import Sequential, save_model, load_model
 filepath = './saved_model'
 save_model(model, filepath)
@@ -146,7 +149,8 @@ model = load_model(filepath, compile = True)
 ```
 # Making Predictions
 
-```
+```python
+
 img_array = cv2.imread('/content/gdrive/MyDrive/mnist/A.jpg',cv2.IMREAD_GRAYSCALE)            
 plt.imshow(img_array,cmap='gray')
 plt.show()
@@ -164,7 +168,7 @@ samples_to_predict.append(new_array)
 
 # Predictions
 
-```
+```python
 predictions = model.predict(new_array)
 print(predictions)
 classes = np.argmax(predictions, axis = 1)
