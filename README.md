@@ -5,18 +5,21 @@
 # 1000 images for each class (13 classes in total)
  ![alt text](https://github.com/thatssweety/Images/blob/efcd70d1f839a3dea9b10169c92c5790988f0e67/Screenshot%20(434).png?raw=true)
 
-# **Tech Stack Used** :
+#  **Tech Stack Used** :
+
 1. Numpy
 2. Pandas
 3. Tensorflow
 4. OpenCV
 5. Keras
 
- # **Code**
+ #   Code
  
  # Loading data and Image Pre-Processing
  
-  ```
+ ```
+ 
+ 
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -41,10 +44,12 @@ IMG_SIZE=50
 new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
 plt.show()
 
+
 ```
 # Creating Training Data using images
 
 ```
+
 training_data = []
 
 def create_training_data():
@@ -64,7 +69,11 @@ def create_training_data():
                 pass
 create_training_data()
 
+
 ```
+![alt text](https://github.com/thatssweety/Images/blob/8c915ddf5cbc49274668af7e61e671d160f5dd12/Screenshot%20(444)%20-%20Copy.png?raw=true)
+
+
 # Creating features and label and saving them
 
 ```
