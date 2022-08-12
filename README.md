@@ -124,6 +124,41 @@ model.compile(loss='sparse_categorical_crossentropy',
 
 model.fit(X, y, batch_size=32, epochs=3, validation_split=0.4)
 ```
+![alt text](https://github.com/thatssweety/Images/blob/94a9b3977f7e98fc190522c6c0580d2f3439e152/Screenshot%20(440).png?raw=true)
 
+# Saving Model
+```
+from tensorflow.keras.models import Sequential, save_model, load_model
+filepath = './saved_model'
+save_model(model, filepath)
+model = load_model(filepath, compile = True)
+```
+# Making Predictions
 
+```
+img_array = cv2.imread('/content/gdrive/MyDrive/mnist/A.jpg',cv2.IMREAD_GRAYSCALE)            
+plt.imshow(img_array,cmap='gray')
+plt.show()
+IMG_SIZE=50
+new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
+new_array=cv2.bitwise_not(new_array)
+#new_array=cv2.bitwise_not(new_array)
+plt.imshow(new_array,cmap='gray')
+plt.show()
+new_array=np.array(new_array).reshape(-1, IMG_SIZE, IMG_SIZE, 1)
+samples_to_predict = []
+samples_to_predict.append(new_array)
+```
+![alt text](https://github.com/thatssweety/Images/blob/94e646ab11d7acde88fb8bfae25272a4b3abbc33/Screenshot%20(441).png?raw=true)
+
+# Predictions
+
+```
+predictions = model.predict(new_array)
+print(predictions)
+classes = np.argmax(predictions, axis = 1)
+print(classes)
+
+```
+![alt text](https://github.com/thatssweety/Images/blob/47bd0051dcedeadd30d85d77fb970f569e293511/Screenshot%20(443).png?raw=true)
 
