@@ -1,20 +1,21 @@
-# Project 1 
+# **Project 1** 
 ![alt text](https://github.com/thatssweety/Images/blob/7655044de3a0b236f70f110aa67bfcc78337879f/you%20(2).png?raw=true)
 
 
 # 1000 images for each class (13 classes in total)
  ![alt text](https://github.com/thatssweety/Images/blob/efcd70d1f839a3dea9b10169c92c5790988f0e67/Screenshot%20(434).png?raw=true)
 
-# Tech Stack Used :
+# **Tech Stack Used** :
 1. Numpy
 2. Pandas
 3. Tensorflow
 4. OpenCV
 5. Keras
 
- # Code
+ # **Code**
  
  # Loading data and Image Pre-Processing
+ 
   ```
 import numpy as np
 import matplotlib.pyplot as plt
