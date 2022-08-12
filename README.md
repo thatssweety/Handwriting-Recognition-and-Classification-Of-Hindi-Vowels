@@ -2,11 +2,9 @@
 <br>
 <br>
 
-## Classification of Hindi alphabets using Convolutional Neural Network
-
 ![alt text](https://github.com/thatssweety/Images/blob/7655044de3a0b236f70f110aa67bfcc78337879f/you%20(2).png?raw=true)
-
-
+<br>
+<br>
 # 1000 images for each class (13 classes in total)
 <br>
 <br>
@@ -198,9 +196,7 @@ print(classes)
 
 ![alt text](https://github.com/thatssweety/Images/blob/47bd0051dcedeadd30d85d77fb970f569e293511/Screenshot%20(443).png?raw=true)
 
-![alt text](https://github.com/thatssweety/Images/blob/8c915ddf5cbc49274668af7e61e671d160f5dd12/Image%20Data%20fot%20training%20and%20validation%20(1).png?raw=true)
-
-
+![alt text](https://github.com/thatssweety/Images/blob/336f2eef6cc8b29f431b5608c301309f8f95b3d5/Image%20Data%20fot%20training%20and%20validation%20(1).png?raw=true)
 
 # Hence Prediction result true!
 <br>
