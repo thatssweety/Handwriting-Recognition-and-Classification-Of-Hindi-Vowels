@@ -62,10 +62,7 @@ new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
 plt.show()
 
 ```
-<br>
-<br>
 # Creating Training Data using images
-
 ```python
 
 training_data = []
@@ -125,6 +122,7 @@ y = pickle.load(pickle_in)
 <br>
 <br>
 # CNN MODEL
+
 ```python
 
 import tensorflow as tf
@@ -158,12 +156,10 @@ model.compile(loss='sparse_categorical_crossentropy',
               metrics=['sparse_categorical_accuracy'])
 
 model.fit(X, y, batch_size=32, epochs=3, validation_split=0.4)
+
 ```
 ![alt text](https://github.com/thatssweety/Images/blob/94a9b3977f7e98fc190522c6c0580d2f3439e152/Screenshot%20(440).png?raw=true)
-<br>
-<br>
 # Saving Model
-
 ```python
 from tensorflow.keras.models import Sequential, save_model, load_model
 filepath = './saved_model'
@@ -171,7 +167,6 @@ save_model(model, filepath)
 model = load_model(filepath, compile = True)
 ```
 # Making Predictions
-
 ```python
 
 img_array = cv2.imread('/content/gdrive/MyDrive/mnist/A.jpg',cv2.IMREAD_GRAYSCALE)            
@@ -188,12 +183,8 @@ samples_to_predict = []
 samples_to_predict.append(new_array)
 ```
 ![alt text](https://github.com/thatssweety/Images/blob/94e646ab11d7acde88fb8bfae25272a4b3abbc33/Screenshot%20(441).png?raw=true)
-<br>
-<br>
-<br>
-<br>
-# Predictions
 
+# Predictions
 ```python
 predictions = model.predict(new_array)
 print(predictions)
@@ -201,23 +192,15 @@ classes = np.argmax(predictions, axis = 1)
 print(classes)
 
 ```
-<br>
-<br>
+
 
 ![alt text](https://github.com/thatssweety/Images/blob/47bd0051dcedeadd30d85d77fb970f569e293511/Screenshot%20(443).png?raw=true)
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 ![alt text](https://github.com/thatssweety/Images/blob/8c915ddf5cbc49274668af7e61e671d160f5dd12/Image%20Data%20fot%20training%20and%20validation%20(1).png?raw=true)
 
-<br>
-<br>
-<br>
-<br>
-# Prediction result true!<br>
+
+
+# Prediction result true!
 <br>
 <br>
 <br>
