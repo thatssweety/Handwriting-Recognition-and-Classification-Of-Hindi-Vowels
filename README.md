@@ -42,7 +42,7 @@ new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
 plt.show()
 
 ```
-### Creating Training Data using images
+# Creating Training Data using images
 
 ```
 training_data = []
@@ -65,7 +65,7 @@ def create_training_data():
 create_training_data()
 
 ```
-### Creating features and label and saving them
+# Creating features and label and saving them
 
 ```
 import random
