@@ -16,7 +16,7 @@
 # Code
  In Python
  
- # Loading data and Image Pre-Processing
+ # Loading Data and Image Pre-Processing
  
  ```python
  
