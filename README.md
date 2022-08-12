@@ -1,8 +1,7 @@
 # Project 1 : Handwriting-Recognition-and-Classification-Of-Hindi-Vowels
 
-![](you (2).png)
+![](https://github.com/thatssweety/Images/blob/7655044de3a0b236f70f110aa67bfcc78337879f/you%20(2).png)
  # Data : 1000 images for each class (13 classes in total)
- ![](Image Data fot training and validation.png)
  # Code
   ```
   import numpy as np
@@ -25,4 +24,4 @@ for category in CATEGORIES:
 
         break  # we just want one for now so break
        
-       ```
+```
